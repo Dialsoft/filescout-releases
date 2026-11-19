@@ -1,6 +1,6 @@
 # FileScout User Guide
 
-**FileScout finds any file or folder on your PC by name, instantly, as you type.** It's one small program (FileScout.exe) with nothing to install. It keeps a list (an "index") of every file on your drives and keeps it up to date by itself, all the time.
+**FileScout finds any file or folder on your PC by name, instantly, as you type.** It comes as an installer (FileScout-Setup.exe) or as one small portable program (FileScout.exe) with nothing to install. It keeps a list (an "index") of every file on your drives and keeps it up to date by itself, all the time.
 
 FileScout works like voidtools' *Everything*, and understands the same search tricks, but it's built to be faster:
 
@@ -15,8 +15,10 @@ FileScout works like voidtools' *Everything*, and understands the same search tr
 
 ## 1. Getting started
 
-1. Download **FileScout.exe** from the [download page](https://github.com/Dialsoft/filescout-releases) and put it anywhere you like, for example on your Desktop or in `C:\Tools`.
-2. Double-click it. Windows asks **"Do you want to allow this app to make changes?"**. Click **Yes**.
+1. Download FileScout from the [download page](https://github.com/Dialsoft/filescout-releases). Pick either:
+   - **FileScout-Setup.exe**, the installer. It asks whether to install for **just you** or for **everyone** on the PC, and adds FileScout to the Start menu and to Windows' Installed apps (with an uninstaller).
+   - **FileScout.exe**, the portable copy. Put it anywhere you like, for example on your Desktop or in `C:\Tools`.
+2. Start FileScout. Windows asks **"Do you want to allow this app to make changes?"**. Click **Yes**.
    - With administrator rights, FileScout reads each NTFS drive's file table directly. A drive with a million files takes a few seconds.
    - If you click **No**, FileScout still works. It scans folders instead (slower the first time) and shows a yellow bar offering to restart as administrator.
 3. Start typing. That's it.
@@ -133,6 +135,7 @@ FileScout checks for a new version when it starts and every 6 hours after. When 
 
 - **Settings**: in the registry, under `HKEY_CURRENT_USER\Software\Dialsoft\FileScout`.
 - **The saved index**: `%LOCALAPPDATA%\Dialsoft\FileScout\FileScout.db`. It holds names, sizes and dates only, never file contents.
+- **Uninstalling** (installer version): Windows Settings > Apps > Installed apps > FileScout > Uninstall. It closes FileScout if it's running, removes the start-with-Windows entry and the saved index, and asks whether to remove your settings too.
 - FileScout never sends anything anywhere. The only time it uses the internet is to check GitHub for updates.
 
 ---

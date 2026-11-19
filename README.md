@@ -1,15 +1,22 @@
 # FileScout
 
-**Find any file or folder on your PC by name, instantly, as you type.** One portable EXE for Windows 10 and 11, nothing to install.
+**Find any file or folder on your PC by name, instantly, as you type.** For Windows 10 and 11, as an installer or a single portable EXE.
 By Dialsoft LLC.
 
 ## Download
 
-**[FileScout.exe](https://github.com/Dialsoft/filescout-releases/raw/main/FileScout.exe)**: version 1.0.0 (1.6 MB). Put it somewhere like your Desktop or `C:\Tools` (not Program Files, so it can keep itself up to date) and double-click it. Windows asks for administrator permission; say **Yes** for the fastest indexing.
+FileScout 1.0.1 comes two ways. Both are the same program.
+
+- **[FileScout-Setup.exe](https://github.com/Dialsoft/filescout-releases/raw/main/FileScout-Setup.exe)**: the installer (0.7 MB). Adds FileScout to the Start menu and to Windows "Installed apps", with an uninstaller. It asks whether to install for **just you** (no administrator needed) or for **everyone who uses the PC** (asks for an administrator).
+- **[FileScout.exe](https://github.com/Dialsoft/filescout-releases/raw/main/FileScout.exe)**: the portable copy (1.6 MB). Nothing to install: put it somewhere like your Desktop or `C:\Tools` (not Program Files, so it can keep itself up to date) and double-click it.
+
+When FileScout starts, Windows asks for administrator permission; say **Yes** for the fastest indexing.
+
+**For IT / remote deployment:** `FileScout-Setup.exe /S` installs silently for the account running it; add `/ALLUSERS` (run as administrator) to install for everyone, `/DESKTOP` for a Desktop shortcut, and `/NOUPDATES` to switch off automatic update checks. `"C:\Program Files\FileScout\Uninstall.exe" /S` removes it silently.
 
 Windows may show a blue "Windows protected your PC" box the first time: click **More info**, then **Run anyway**.
 
-SHA-256: `f270996e1478f3b08730a576951013b5967a3beb7f666c6623c1f8e6299219eb`
+SHA-256: FileScout-Setup.exe `44ba557ffe6cfc15a135484f7f809604817ff1690ccb81b34831bfe400821b11` · FileScout.exe `20e9d2984f4bd00db8759686fed1e50beb4b06f60233b7e9af642cdd00d7dfe6`
 
 ## Learn FileScout
 

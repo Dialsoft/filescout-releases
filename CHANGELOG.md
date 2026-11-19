@@ -1,3 +1,10 @@
+## 1.0.1 (2026-11-18)
+- New: FileScout now also comes as an installer, FileScout-Setup.exe. It asks whether to install for just you (no administrator needed) or for everyone on the PC, adds FileScout to the Start menu (and the Desktop if you like) and to Windows' Installed apps list, with an uninstaller.
+- Installed copies update themselves through the installer, so the Installed apps list always shows the right version.
+- The installer and uninstaller close a FileScout that's running in the tray by themselves (it saves its index first). Uninstalling also removes the start-with-Windows entry and the saved index, and asks before removing your settings.
+- For IT: FileScout-Setup.exe /S installs silently; add /ALLUSERS (as administrator) for everyone, /DESKTOP for a Desktop shortcut, /NOUPDATES to switch off automatic update checks.
+- The portable FileScout.exe is still available and works exactly as before.
+
 ## 1.0.0 (2026-11-18)
 - First release of FileScout: find any file or folder on your PC by name, instantly, as you type.
 - Reads each NTFS drive's file table directly (with administrator rights), using several threads at once: millions of files indexed in seconds.
